@@ -15,14 +15,14 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Sync staging to main (fast-forward)
+      - name: Sync stage to main (fast-forward)
         run: |
           git config user.name  "github-actions"
           git config user.email "actions@users.noreply.github.com"
 
-          git fetch origin main staging
+          git fetch origin main stage
 
-          git checkout staging || git checkout -b staging origin/staging
+          git checkout stage || git checkout -b stage origin/stage
           git reset --hard origin/main
 
-          git push origin staging --force-with-lease
+          git push origin stage --force-with-lease
