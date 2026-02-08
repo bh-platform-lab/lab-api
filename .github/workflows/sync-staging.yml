@@ -1,0 +1,28 @@
+name: Sync stage branch with main
+
+on:
+  push:
+    branches: [ "main" ]
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Sync staging to main (fast-forward)
+        run: |
+          git config user.name  "github-actions"
+          git config user.email "actions@users.noreply.github.com"
+
+          git fetch origin main staging
+
+          git checkout staging || git checkout -b staging origin/staging
+          git reset --hard origin/main
+
+          git push origin staging --force-with-lease
