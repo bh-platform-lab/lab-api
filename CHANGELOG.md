@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.2.0-rc.1 (2026-02-10)
+
+### Features
+
+- **job**: Fix sync job
+  ([`63bac88`](https://github.com/bh-platform-lab/lab-api/commit/63bac886270429471ceccd847fa45c721018ec2f))
+
+
 ## v1.1.0 (2026-02-08)
 
 
