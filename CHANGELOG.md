@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.2.1 (2026-02-15)
+
+### Bug Fixes
+
+- **docker**: Run as non-root
+  ([`6d24e19`](https://github.com/bh-platform-lab/lab-api/commit/6d24e19f35cc99cc5af4f43a6cfeaa7ddb637c96))
+
+
 ## v1.2.0 (2026-02-10)
 
 
