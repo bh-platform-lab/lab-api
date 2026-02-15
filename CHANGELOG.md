@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.3.0-rc.1 (2026-02-15)
+
+### Features
+
+- **ci**: Build and publish arm64 docker image
+  ([`3782a5c`](https://github.com/bh-platform-lab/lab-api/commit/3782a5c12fad04d4cbfdabbfdd9d4f06c4f1d7f0))
+
+
 ## v1.2.1 (2026-02-15)
 
 ### Bug Fixes
